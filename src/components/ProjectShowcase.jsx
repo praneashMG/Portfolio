@@ -28,7 +28,7 @@ const ProjectShowcase = () => {
     },
     {
       id: 2,
-      title: "Physiommmtherapy Clinic",
+      title: "Physiotherapy Clinic",
       category: "Healthcare Website",
       description: "Professional website for a physiotherapy clinic",
       details: "Built a patient management system with appointment booking, practitioner profiles, and service information. Implemented a secure backend for patient records using PHP and SQL.",
