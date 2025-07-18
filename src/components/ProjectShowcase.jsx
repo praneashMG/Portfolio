@@ -12,7 +12,7 @@ const ProjectShowcase = () => {
   title: "React Jewels Store",
   category: "E-commerce Website",
   description: "Developed a dynamic and responsive jewelry e-commerce website",
-  details: "Built using React, Tailwind CSS, and Node.js with MongoDB integration. Includes product listing, cart, wishlist, user authentication, and order management. Admin can add, update, and delete products. Payment integration and PDF order report functionality included.",
+  details: "Built using React, Tailwind CSS",
   technologies: ["React", "Tailwind CSS", ],
   color: "from-yellow-400 to-pink-500",
   accent: "bg-yellow-400",
