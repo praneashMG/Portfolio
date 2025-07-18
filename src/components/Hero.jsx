@@ -139,7 +139,7 @@ const Hero = () => {
           variants={itemVariants}
           className="text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-gray-100 via-gray-300 to-gray-100 text-transparent bg-clip-text leading-tight"
         >
-          Full Stack Developer
+          Front End Developer
         </Motion.h2>
         
         <Motion.p variants={itemVariants} className="text-lg md:text-xl text-gray-400 mb-8">
