@@ -35,14 +35,14 @@ const ProjectShowcase = () => {
       technologies: ["HTML5", "CSS3", "JavaScript", "Google Fonts", "IonIcons"],
       color: "from-rose-500 to-pink-600",
       accent: "bg-rose-500",
-            liveDemo: "https://e-com-beauty-products.vercel.app/",
-                sourceCode: "https://github.com/praneashMG/e-com-beauty-products",
+            liveDemo: "https://pgr-spicy.vercel.app/",
+                sourceCode: "https://github.com/praneashMG/PGR_SPICY",
 
 
       icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-16 w-16" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-        </svg>
+       <svg xmlns="http://www.w3.org/2000/svg" className="h-16 w-16" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 3v18M16 3c0 3-1 5-3 6v12" />
+  </svg>
       )
     },
     {
@@ -73,14 +73,16 @@ const ProjectShowcase = () => {
       technologies: ["React", "Vite", "Tailwind CSS", "Node.js"],
       color: "from-yellow-600 to-orange-700",
       accent: "bg-yellow-600",
-            liveDemo: "https://pgr-spicy.vercel.app/",
-                sourceCode: "https://github.com/praneashMG/PGR_SPICY",
+            
+                 liveDemo: "https://e-com-beauty-products.vercel.app/",
+                sourceCode: "https://github.com/praneashMG/e-com-beauty-products",
 
 
       icon: (
-  <svg xmlns="http://www.w3.org/2000/svg" className="h-16 w-16" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 3v18M16 3c0 3-1 5-3 6v12" />
-  </svg>
+  
+   <svg xmlns="http://www.w3.org/2000/svg" className="h-16 w-16" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
 )
 
     }
