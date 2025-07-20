@@ -70,7 +70,27 @@ const ProjectShowcase = () => {
       category: "E-commerce",
       description: "Elegant online store for beauty products",
       details: "Created a visually appealing e-commerce site with product filtering, wishlists, and user accounts. Focused on mobile-first design and fast loading times using React, Vite and Tailwind CSS.",
-      technologies: ["React", "Vite", "Tailwind CSS", "Node.js", "Firebase"],
+      technologies: ["React", "Vite", "Tailwind CSS", "Node.js"],
+      color: "from-yellow-600 to-orange-700",
+      accent: "bg-yellow-600",
+            liveDemo: "https://pgr-spicy.vercel.app/",
+                sourceCode: "https://github.com/praneashMG/PGR_SPICY",
+
+
+      icon: (
+  <svg xmlns="http://www.w3.org/2000/svg" className="h-16 w-16" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 3v18M16 3c0 3-1 5-3 6v12" />
+  </svg>
+)
+
+    },
+    {
+      id: 5,
+      title: "PGR-Restaurant",
+      category: "Restaurant",
+      description: "Elegant and responsive website for a high-end restaurant",
+      details: "Designed and developed a modern, single-page restaurant website featuring a dynamic hero slider, interactive menu, online reservation form, and testimonials. Focused on a luxurious user experience with custom CSS animations and parallax effects.",
+      technologies: ["HTML5", "CSS3", "JavaScript", "Google Fonts", "IonIcons"],
       color: "from-rose-500 to-pink-600",
       accent: "bg-rose-500",
             liveDemo: "https://e-com-beauty-products.vercel.app/",
