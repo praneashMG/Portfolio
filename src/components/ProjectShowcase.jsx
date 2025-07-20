@@ -28,20 +28,20 @@ const ProjectShowcase = () => {
     },
     {
       id: 2,
-      title: "Physiotherapy Clinic",
-      category: "Healthcare Website",
-      description: "Professional website for a physiotherapy clinic",
-      details: "Built a patient management system with appointment booking, practitioner profiles, and service information. Implemented a secure backend for patient records using PHP and SQL.",
-      technologies: ["PHP", "SQL", "JavaScript", "HTML/CSS"],
-      color: "from-emerald-500 to-teal-600",
-      accent: "bg-emerald-500",
+      title: "PGR-Restaurant",
+      category: "Restaurant",
+      description: "Elegant and responsive website for a high-end restaurant",
+      details: "Designed and developed a modern, single-page restaurant website featuring a dynamic hero slider, interactive menu, online reservation form, and testimonials. Focused on a luxurious user experience with custom CSS animations and parallax effects.",
+      technologies: ["HTML5", "CSS3", "JavaScript", "Google Fonts", "IonIcons"],
+      color: "from-rose-500 to-pink-600",
+      accent: "bg-rose-500",
             liveDemo: "https://e-com-beauty-products.vercel.app/",
-                sourceCode: "https://github.com/your-repo/bike-taxi",
+                sourceCode: "https://github.com/praneashMG/e-com-beauty-products",
 
 
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" className="h-16 w-16" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
         </svg>
       )
     },
@@ -63,27 +63,9 @@ const ProjectShowcase = () => {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
         </svg>
       )
-    },{
-      id: 5,
-      title: "PGR-Restaurant",
-      category: "Restaurant",
-      description: "Elegant and responsive website for a high-end restaurant",
-      details: "Designed and developed a modern, single-page restaurant website featuring a dynamic hero slider, interactive menu, online reservation form, and testimonials. Focused on a luxurious user experience with custom CSS animations and parallax effects.",
-      technologies: ["HTML5", "CSS3", "JavaScript", "Google Fonts", "IonIcons"],
-      color: "from-rose-500 to-pink-600",
-      accent: "bg-rose-500",
-            liveDemo: "https://e-com-beauty-products.vercel.app/",
-                sourceCode: "https://github.com/praneashMG/e-com-beauty-products",
-
-
-      icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-16 w-16" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-        </svg>
-      )
     },
     {
-      id: 5,
+      id: 4,
       title: "Beauty Products",
       category: "E-commerce",
       description: "Elegant online store for beauty products",
@@ -175,7 +157,6 @@ const ProjectShowcase = () => {
   { x: '-160px', y: '-70px', rot: '-12deg' },   // left
   { x: '0',      y: '-100px', rot: '0deg' },    // center
   { x: '160px',  y: '-70px', rot: '12deg' },    // right
-  { x: '320px',  y: '-30px', rot: '22deg' }     // far right
 ];
 
             
