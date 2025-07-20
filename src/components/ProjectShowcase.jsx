@@ -4,27 +4,27 @@ import React, { useState, useRef, useEffect } from 'react';
 const ProjectShowcase = () => {
   const [activeCard, setActiveCard] = useState(null);
   const [isHovered, setIsHovered] = useState(false);
-  const [isMobile, setIsMobile] = useState(false);
   const deckRef = useRef(null);
-      
-  // PROJECTS ARRAY (unchanged, only formatting improved for readability)
+    
   const projects = [
     {
       id: 1,
-      title: "React Jewels Store",
-      category: "E-commerce Website",
-      description: "Developed a dynamic and responsive jewelry e-commerce website",
-      details: "Built using React, Tailwind CSS",
-      technologies: ["React", "Tailwind CSS"],
-      color: "from-yellow-400 to-pink-500",
-      accent: "bg-yellow-400",
+  title: "React Jewels Store",
+  category: "E-commerce Website",
+  description: "Developed a dynamic and responsive jewelry e-commerce website",
+  details: "Built using React, Tailwind CSS",
+  technologies: ["React", "Tailwind CSS", ],
+  color: "from-yellow-400 to-pink-500",
+  accent: "bg-yellow-400",
       liveDemo: "https://jewelery-taupe.vercel.app/",
-      sourceCode: "https://github.com/praneashMG/JEWELERY",
+          sourceCode: "https://github.com/praneashMG/JEWELERY",
+
+
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" className="h-16 w-16" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
         </svg>
-      ),
+      )
     },
     {
       id: 2,
@@ -35,33 +35,37 @@ const ProjectShowcase = () => {
       technologies: ["HTML5", "CSS3", "JavaScript", "Google Fonts", "IonIcons"],
       color: "from-rose-500 to-pink-600",
       accent: "bg-rose-500",
-      liveDemo: "https://pgr-spicy.vercel.app/",
-      sourceCode: "https://github.com/praneashMG/PGR_SPICY",
+            liveDemo: "https://pgr-spicy.vercel.app/",
+                sourceCode: "https://github.com/praneashMG/PGR_SPICY",
+
+
       icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-16 w-16" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 3v18M16 3c0 3-1 5-3 6v12" />
-        </svg>
+       <svg xmlns="http://www.w3.org/2000/svg" className="h-16 w-16" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 3v18M16 3c0 3-1 5-3 6v12" />
+  </svg>
       )
     },
+    // {
+    //   id: 3,
+    //   title: "E-commerce Store",
+    //   category: "Online Shopping",
+    //   description: "Modern e-commerce platform with product listings",
+    //   details: "Developed a full-featured online store with product categories, user reviews, shopping cart, and secure checkout. Integrated with payment gateways and inventory management using React.",
+    //   technologies: ["React", "Node.js", "Express", "MongoDB", "Stripe API"],
+    //   color: "from-amber-500 to-orange-600",
+    //   accent: "bg-amber-500",
+    //         liveDemo: "https://e-com-beauty-products.vercel.app/",
+    //             sourceCode: "https://github.com/your-repo/bike-taxi",
+
+
+    //   icon: (
+    //     <svg xmlns="http://www.w3.org/2000/svg" className="h-16 w-16" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    //       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+    //     </svg>
+    //   )
+    // },
     {
       id: 3,
-      title: "E-commerce Store",
-      category: "Online Shopping",
-      description: "Modern e-commerce platform with product listings",
-      details: "Developed a full-featured online store with product categories, user reviews, shopping cart, and secure checkout. Integrated with payment gateways and inventory management using React.",
-      technologies: ["React", "Node.js", "Express", "MongoDB", "Stripe API"],
-      color: "from-amber-500 to-orange-600",
-      accent: "bg-amber-500",
-      liveDemo: "https://e-com-beauty-products.vercel.app/",
-      sourceCode: "https://github.com/your-repo/bike-taxi",
-      icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-16 w-16" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
-        </svg>
-      )
-    },
-    {
-      id: 4,
       title: "Beauty Products",
       category: "E-commerce",
       description: "Elegant online store for beauty products",
@@ -69,35 +73,20 @@ const ProjectShowcase = () => {
       technologies: ["React", "Vite", "Tailwind CSS", "Node.js"],
       color: "from-yellow-600 to-orange-700",
       accent: "bg-yellow-600",
-      liveDemo: "https://e-com-beauty-products.vercel.app/",
-      sourceCode: "https://github.com/praneashMG/e-com-beauty-products",
+            
+                 liveDemo: "https://e-com-beauty-products.vercel.app/",
+                sourceCode: "https://github.com/praneashMG/e-com-beauty-products",
+
+
       icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-16 w-16" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+  
+   <svg xmlns="http://www.w3.org/2000/svg" className="h-16 w-16" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
         </svg>
-      )
+)
+
     }
   ];
-
-
-  // DYNAMIC POSITION FUNCTION (supports mobile)
-  function getCardPosition(index, total, isMobile) {
-    if (isMobile) {
-      // Vertically stack/spread cards, centered horizontally
-      const y = -90 + index * 60; // change spacing as desired
-      const x = 0;
-      const rot = 0;
-      return { x: `${x}px`, y: `${y}px`, rot: `${rot}deg` };
-    } else {
-      // Fan out horizontally for desktop
-      const spread = 160;
-      const centerOffset = ((total - 1) / 2) * spread;
-      const x = index * spread - centerOffset;
-      const y = -100 - Math.abs(index - (total - 1) / 2) * 15;
-      const rot = (index - (total - 1) / 2) * 12;
-      return { x: `${x}px`, y: `${y}px`, rot: `${rot}deg` };
-    }
-  }
 
   const handleCardClick = (id) => {
     if (activeCard === id) {
@@ -111,14 +100,6 @@ const ProjectShowcase = () => {
     setIsHovered(isHovering);
   };
 
-  // Responsive: check for mobile
-  useEffect(() => {
-    const checkMobile = () => setIsMobile(window.innerWidth < 640);
-    checkMobile();
-    window.addEventListener('resize', checkMobile);
-    return () => window.removeEventListener('resize', checkMobile);
-  }, []);
-
   // Close card when clicking outside
   useEffect(() => {
     const handleClickOutside = (e) => {
@@ -126,6 +107,7 @@ const ProjectShowcase = () => {
         setActiveCard(null);
       }
     };
+
     document.addEventListener('mousedown', handleClickOutside);
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, []);
@@ -134,14 +116,14 @@ const ProjectShowcase = () => {
     <div className="min-h-screen bg-gray-900 text-white p-4 md:p-8 relative overflow-hidden">
       <header className="max-w-4xl mx-auto text-center mb-12 mt-8">
         <h1 className="text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-pink-400 mb-4">
-          Project Showcase
+           Project Showcase
         </h1>
         {/* <p className="text-lg md:text-xl text-indigo-200 max-w-2xl mx-auto">
           Explore my projects through this interactive card deck. Hover to spread cards, click to view details.
         </p> */}
       </header>
 
-      <div
+      <div 
         ref={deckRef}
         className="relative max-w-6xl mx-auto h-[550px] flex items-center justify-center"
         onMouseEnter={() => handleDeckHover(true)}
@@ -161,20 +143,28 @@ const ProjectShowcase = () => {
           let transform = '';
           let zIndex = index;
           let opacity = 1;
-          let width = isMobile ? '90vw' : '16rem';    // Wider on mobile
-          let height = isMobile ? '18rem' : '24rem';  // Shorter on mobile
-
+          let width = '16rem'; // 64
+          let height = '24rem'; // 96
+          
           if (activeCard === project.id) {
             // Active card expands to show details
             transform = 'translate(-50%, -50%) rotate(0deg)';
             zIndex = 50;
-            width = isMobile ? '96vw' : '22rem';
-            height = isMobile ? '27rem' : '30rem';
-          } else if (isHovered || isMobile) {
+            width = '22rem'; // Expanded width
+            height = '30rem'; // Expanded height
+          } else if (isHovered) {
             // Spread positions for each card
-            const { x, y, rot } = getCardPosition(index, projects.length, isMobile);
-            transform = `translate(-50%, -50%) translate(${x}, ${y}) rotate(${rot})`;
+            const positions = [
+  { x: '-320px', y: '-30px', rot: '-22deg' },   // far left
+  { x: '-160px', y: '-70px', rot: '-12deg' },   // left
+  { x: '0',      y: '-100px', rot: '0deg' },    // center
+  { x: '160px',  y: '-70px', rot: '12deg' },    // right
+];
+
+            
+            transform = `translate(-50%, -50%) translate(${positions[index].x}, ${positions[index].y}) rotate(${positions[index].rot})`;
             zIndex = 10 + index;
+            
             // Dim other cards when one is active
             if (activeCard) opacity = 0.5;
           } else {
@@ -182,7 +172,7 @@ const ProjectShowcase = () => {
             transform = `translate(-50%, -50%) translate(0, ${index * -10}px) rotate(${index % 2 === 0 ? '-3deg' : '3deg'})`;
             zIndex = index;
           }
-
+          
           return (
             <div
               key={project.id}
@@ -240,39 +230,40 @@ const ProjectShowcase = () => {
                   {/* Footer with action buttons */}
                   <div className="mt-auto pt-4 border-t border-white/20">
                     <div className="flex justify-between items-center">
-                      <button
+                      <button 
                         className={`px-3 py-1 ${project.accent} rounded-full text-xs font-bold text-white hover:opacity-90 transition`}
                       >
                         {activeCard === project.id ? "Close Details" : "View Details"}
                       </button>
                       
-                      {activeCard === project.id && (
-                        <div className="flex gap-2">
-                          {project.sourceCode && (
-                            <a
-                              href={project.sourceCode}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="px-3 py-1 bg-white/10 backdrop-blur-sm rounded-full text-xs text-white hover:bg-white/20 transition"
-                            >
-                              Source
-                            </a>
-                          )}
-                          {project.liveDemo && (
-                            <a
-                              href={project.liveDemo}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="px-3 py-1 bg-white text-indigo-800 rounded-full text-xs font-bold hover:bg-indigo-100 transition"
-                            >
-                              Live Demo
-                            </a>
-                          )}
-                        </div>
-                      )}
+                   {activeCard === project.id && (
+  <div className="flex gap-2">
+    {project.sourceCode && (
+      <a 
+        href={project.sourceCode} 
+        target="_blank" 
+        rel="noopener noreferrer" 
+        className="px-3 py-1 bg-white/10 backdrop-blur-sm rounded-full text-xs text-white hover:bg-white/20 transition"
+      >
+        Source
+      </a>
+    )}
+    {project.liveDemo && (
+      <a 
+        href={project.liveDemo} 
+        target="_blank" 
+        rel="noopener noreferrer" 
+        className="px-3 py-1 bg-white text-indigo-800 rounded-full text-xs font-bold hover:bg-indigo-100 transition"
+      >
+        Live Demo
+      </a>
+    )}
+  </div>
+)}
+
+
                     </div>
                   </div>
-
                 </div>
               </div>
             </div>
