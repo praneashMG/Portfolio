@@ -171,11 +171,13 @@ const ProjectShowcase = () => {
           } else if (isHovered) {
             // Spread positions for each card
             const positions = [
-              { x: '-200px', y: '-30px', rot: '-15deg' },
-              { x: '0', y: '-50px', rot: '0deg' },
-              { x: '200px', y: '-30px', rot: '15deg' },
-              { x: '0', y: '50px', rot: '5deg' },
-            ];
+  { x: '-320px', y: '-30px', rot: '-22deg' },   // far left
+  { x: '-160px', y: '-70px', rot: '-12deg' },   // left
+  { x: '0',      y: '-100px', rot: '0deg' },    // center
+  { x: '160px',  y: '-70px', rot: '12deg' },    // right
+  { x: '320px',  y: '-30px', rot: '22deg' }     // far right
+];
+
             
             transform = `translate(-50%, -50%) translate(${positions[index].x}, ${positions[index].y}) rotate(${positions[index].rot})`;
             zIndex = 10 + index;
