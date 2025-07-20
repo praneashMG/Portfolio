@@ -7,22 +7,23 @@ const ProjectShowcase = () => {
   const deckRef = useRef(null);
     
   const projects = [
-    {
+    
+     {
       id: 1,
-  title: "React Jewels Store",
-  category: "E-commerce Website",
-  description: "Developed a dynamic and responsive jewelry e-commerce website",
-  details: "Built using React, Tailwind CSS",
-  technologies: ["React", "Tailwind CSS", ],
-  color: "from-yellow-400 to-pink-500",
-  accent: "bg-yellow-400",
-      liveDemo: "https://jewelery-taupe.vercel.app/",
-          sourceCode: "https://github.com/praneashMG/JEWELERY",
+      title: "E-commerce Store",
+      category: "Online Shopping",
+      description: "Modern e-commerce platform with product listings",
+      details: "Developed a full-featured online store with product categories, user reviews, shopping cart, and secure checkout. Integrated with payment gateways and inventory management using React.",
+      technologies: ["React", "Node.js", "Express", "MongoDB", "Stripe API"],
+      color: "from-amber-500 to-orange-600",
+      accent: "bg-amber-500",
+            liveDemo: "https://e-com-beauty-products.vercel.app/",
+                sourceCode: "https://github.com/your-repo/bike-taxi",
 
 
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" className="h-16 w-16" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
         </svg>
       )
     },
@@ -45,27 +46,28 @@ const ProjectShowcase = () => {
   </svg>
       )
     },
-    // {
-    //   id: 3,
-    //   title: "E-commerce Store",
-    //   category: "Online Shopping",
-    //   description: "Modern e-commerce platform with product listings",
-    //   details: "Developed a full-featured online store with product categories, user reviews, shopping cart, and secure checkout. Integrated with payment gateways and inventory management using React.",
-    //   technologies: ["React", "Node.js", "Express", "MongoDB", "Stripe API"],
-    //   color: "from-amber-500 to-orange-600",
-    //   accent: "bg-amber-500",
-    //         liveDemo: "https://e-com-beauty-products.vercel.app/",
-    //             sourceCode: "https://github.com/your-repo/bike-taxi",
-
-
-    //   icon: (
-    //     <svg xmlns="http://www.w3.org/2000/svg" className="h-16 w-16" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-    //       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
-    //     </svg>
-    //   )
-    // },
     {
       id: 3,
+  title: "React Jewels Store",
+  category: "E-commerce Website",
+  description: "Developed a dynamic and responsive jewelry e-commerce website",
+  details: "Built using React, Tailwind CSS",
+  technologies: ["React", "Tailwind CSS", ],
+  color: "from-yellow-400 to-pink-500",
+  accent: "bg-yellow-400",
+      liveDemo: "https://jewelery-taupe.vercel.app/",
+          sourceCode: "https://github.com/praneashMG/JEWELERY",
+
+
+      icon: (
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-16 w-16" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+        </svg>
+      )
+    },
+   
+    {
+      id: 4,
       title: "Beauty Products",
       category: "E-commerce",
       description: "Elegant online store for beauty products",
