@@ -264,8 +264,6 @@ const ProjectShowcase = () => {
   </div>
   
 )}
-
-
                     </div>
                   </div>
                 </div>
@@ -274,21 +272,20 @@ const ProjectShowcase = () => {
           );
         })}
       </div>
-      <a 
-  href="https://bik-e-rental.vercel.app/" 
-  target="_blank" 
-  rel="noopener noreferrer" 
-  className="block"
->
-  <div className="relative max-w-md mx-auto mt-24 animate-pulse">
+      {/* "Under Working Now" Project Card */}
+<div className="relative z-30">
+  <a 
+    href="https://bik-e-rental.vercel.app/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="block max-w-md mx-auto mt-24 animate-pulse"
+  >
     <div className="w-full h-64 bg-gradient-to-br from-gray-800 to-gray-900 border-4 border-dashed border-yellow-400 rounded-2xl shadow-2xl flex flex-col items-center justify-center transition hover:scale-105 hover:shadow-yellow-400/30">
-      {/* Icon */}
       <div className="mb-4">
         <svg xmlns="http://www.w3.org/2000/svg" className="h-14 w-14 text-yellow-400 animate-bounce" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6 .5A9 9 0 1112 3a9 9 0 019 9.5z" />
         </svg>
       </div>
-      {/* Content */}
       <h3 className="text-2xl font-bold text-yellow-300 mb-2 tracking-wide">Under Working Now</h3>
       <p className="text-gray-200 text-center max-w-xs">
         Exciting new project in development. Stay tuned for updates!
@@ -299,8 +296,9 @@ const ProjectShowcase = () => {
         </span>
       </div>
     </div>
-  </div>
-</a>
+  </a>
+</div>
+
 
 
       {/* Floating cards decoration */}
