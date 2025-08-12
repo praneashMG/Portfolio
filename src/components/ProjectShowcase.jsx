@@ -299,7 +299,7 @@ const ProjectShowcase = () => {
   </a>
 </div><div className="relative z-30">
   <a 
-    href="https://pgr-dresss.vercel.app/"
+    href="https://pgr-dress-x2q1.vercel.app/"
     target="_blank"
     rel="noopener noreferrer"
     className="block max-w-md mx-auto mt-24 animate-pulse"

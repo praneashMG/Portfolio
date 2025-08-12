@@ -150,7 +150,7 @@ const Hero = () => {
           <Motion.a 
             whileHover={{ y: -5, boxShadow: "0 10px 20px rgba(255,255,255,0.2)" }}
             whileTap={{ scale: 0.95 }}
-            href={`/${encodeURIComponent("PRANEASH MG RESUME.pdf")}`}
+            href={`/${encodeURIComponent("PRANEASH MG 21ISR035.pdf")}`}
             download="Praneash_MG_Resume.pdf"
             
             className="bg-white text-gray-900 px-8 py-3 rounded-md font-medium hover:bg-gray-100 transition-all duration-300 shadow-lg flex items-center justify-center gap-2"
