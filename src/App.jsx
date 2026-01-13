@@ -6,6 +6,8 @@ import './components/ProjectShowcase'
 import ProjectShowcase from './components/ProjectShowcase';
 import SkillsGrid from './components/SkillsGrid';
 import AboutUs from './components/AboutUs'
+import ProjectGalleryPage from './components/ProjectGallery';
+import ProjectGallery from './components/ProjectGallery';
 function App() {
   return (
     <div className="App">
@@ -13,7 +15,7 @@ function App() {
        <section id="projects">
         <ProjectShowcase />
       </section>
-      
+      <ProjectGallery/>
        <SkillsGrid />
       <section id="about">
         <AboutUs />
