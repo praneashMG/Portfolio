@@ -3,7 +3,7 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 import { Github, Linkedin, Twitter, Download, Send, Mail, Phone } from 'lucide-react';
 
 // Using a professional placeholder image
-const profileImage = "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80";
+const profileImage = "/src/assets/praneash.jpeg";
 
 // --- Animations ---
 const fadeInUp = {
